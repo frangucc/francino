@@ -214,12 +214,12 @@ body > ng-include > ion-nav-view > div > ion-pane > header {
   margin-top: 40px !important; }
 
 .mobile-heros h1 {
-  font-size: 3em !important;
+  font-size: 2.6em !important;
   margin: 40px 0 0 0;
   color: #202b39 !important;
   text-align: left;
   font-weight: 700;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   line-height: 100%;
   font-family: Raleway, sans-serif !important;
   padding: 10% 0 0;
@@ -340,5 +340,18 @@ body > ng-include > ion-nav-view > div > ion-pane > header {
     letter-spacing: -3px;
     font-family: Raleway, sans-serif !important;
     text-shadow: 0 1px #000; }
+
+#page-platform-mobile .slider-slide {
+  padding-top: 40px;
+  text-align: center; }
+#page-platform-mobile h2 {
+  padding: 50px 0 0 20px;
+  width: 100%; }
+#page-platform-mobile .shim {
+  margin-top: -30px; }
+#page-platform-mobile p {
+  padding: 20px; }
+#page-platform-mobile a {
+  color: #000 !important; }
 
 /*# sourceMappingURL=app.css.map */

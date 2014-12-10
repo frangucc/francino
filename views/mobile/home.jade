@@ -1,44 +1,55 @@
 ion-view.homepage-hero
+  ng-include(src="'actionsheet.html'")
   ion-content(padding='true', scroll='true')
     ion-slide-box
       ion-slide
         div.mobile-heros
-          h1 In-location
+          h1 Hello!
             br
-            | Mobile
+            strong I'm Franchino
+          h3 pronounced (fran-KEY-no)
             br
-            strong Just Got Real
-          h3 Mobile campaigns that start
             br
-            | with a Tap and end with results.
+            img(src='./img/frank.png', style='margin-top: 0%;')
+          h3 You're on my mobile site!
             br
-            a(href='index.html#/how', style='padding-top: 40px;') How it Works
-          img(src='./img/hero_hand_mobile@2x.png', width='90%', style='margin-top: 0%;')
+            | You must not be at your desk.
+            br
+            br
+            | Swipe around and get to know me.
+            
       ion-slide
-        div.mobile-heros
-          h1 Pre-built 
+        div.mobile-heros(style='padding:10px 20px 0 20px;')
+          h1 I am an 
             br
-            | Incentives
+            | Experience Designer
             br
-            strong Out of the Box 
-          h3
-            a(href='index.html#/beacon-ble-nfc-mobile-api-sdk', style='padding-top: 40px;') About the Mobile SDK
-          img(src='./img/box-phone-alt@2x.png', style='margin-top: 0%;')
+            | and Front-End MVC Developer
+            br
+            br
+            strong ...whatever that means
+          h3 Here are some quick links so we can cut to the chase:
+            br
+            br
+            a(href='#/resume', style='padding-top: 40px;') Resume
+            br
+            br
+            br
+              
+
       ion-slide
-        div.mobile-heros
-          h1 Visible 
-            strong Engagement
-            | &nbsp; Touchpoints
-          h3
-            a(href='index.html#/beacon-ble-nfc-connected-touchpoint', style='padding-top: 40px;') About our Touchpoints
-          img(src='./img/box-ctp_mobile@2x.png', style='margin-top: 10%;')
-      ion-slide
-        div.mobile-heros
-          h1 Remotely
+        div.mobile-heros(ng-controller='ContactSheetCtrl', style='padding:10px 20px 0 20px;')
+          h1 Here is a
             br
-            | Manage it All
+            | funny gif that has
             br
-            strong  From the Cloud
-          h3
-            a(href='index.html#/tapcentive-beacon-nfc-cloud-manager', style='padding-top: 20px;') About the Manager
-          img(src='./img/box-manager@2x.png', style='position: relative; right: -10%;')
+            | nothing to do with anything
+            br
+            br
+            img(src='http://i.imgur.com/NAn3ojT.gif', style='margin-top: 0%;')
+            br
+            br
+            button.button(ng-click='showActionsheet()') Contact Me
+            br
+            br
+      
