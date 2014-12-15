@@ -352,6 +352,40 @@ Franchino.controller "SlidesMonthlysTwoCtrl", ($scope) ->
     }
   ]
 
+Franchino.controller "BlogCtrl", ($scope) ->
+
+  $scope.articles = [
+    {
+      "date" : "Posted by Franchino on December 12, 2014",
+      "heading" : "My path to learning Swift",
+      "authorimg" : "/img/frank.png",
+      "img" : "/img/dec/newsletter-swiftris-header.gif",
+      "blob" : "I've been an MVC developer in every language except for iOS. This past October, I took my first real deep dive into iOS programming and started with Swift. There are two great tutorials out there. The first is from bloc.io and is free. It's a game, Swiftris, so get ready for some action. The second will help you build something more appish, it's by Appcoda. Got their book and will be done with it this week. So far, books ok, but it moves really slow.",
+      "resource1" : "https://www.bloc.io/swiftris-build-your-first-ios-game-with-swift",
+      "resource2" : "http://www.appcoda.com/swift/"
+    },
+    {
+      "date" : "Posted by Franchino on December 11, 2014",
+      "heading" : "Why I get goose bumps when you talk about automated email marketing and segmentation and customer.io and things like that.",
+      "authorimg" : "/img/frank.png",
+      "img" : "/img/dec/prepemails.png",
+      "blob" : "I get teary eyed when I talk about my work at BenchPrep.com. In short, I was the first employee and helped the company get to their series B near the end of year two. I got a lot done there, and one of the things I really enjoyed was building out technology to segment leads, bring different users down different communication paths and how I mapped out the entire system using complex diagrams and workflows. Some of the tools were built and based on ques like Redis or Resque, others we built into ExactTarget and Customer.io. In the end, I became somewhat of an expert at monetizing emails. Within our email marketing channel, we explored tagging users based on their actions, such as opens or non opens, or what they clicked on, we targed email users who had been touched seven times with special irrisitable sales, because we know after 6 touches, we could convert. These tricks we learned led to 25-30k days, and eventually, days where we sold 100k worth of subscriptions. So, my point? Don't be surprised if I geek out and faint when I hear you talk about transactional emailing and cadences and consumer journies and stuff like that."
+    },
+    {
+      "date" : "Posted by Franchino on December 10, 2014",
+      "heading" : "If I could have one wish; I get to use this method when designing your consumer journey funnel.",
+      "authorimg" : "/img/frank.png",
+      "img" : "/img/dec/ux_board.jpg",
+      "blob" : "So after a bunch of ethnographic studies from persona matches I gather in-person, I get to fill a wall up with key things people said, felt, heard - motivators, barriers, questions, attitudes and such. I then group these post-it thoughts in various ways, looking for patterns, sentiment, new ideas. I then take this rich data and develop a what could be branding, a landing page or an email - with what I call, an inverted pyramid approach to content, where addressing the most important things found in the user research get addressed in a heriarchical order. I create 5-6 iterations of the landing page and re-run them through a second group of participants, stakeholders and friends. I then take even more notes on peoples speak-aloud reactions to the landing pages. After this, I'm ready to design the final copy and pages for your funnel." 
+    },
+    {
+      "date" : "Posted by Franchino on December 9, 2014",
+      "heading" : "Did I even belong here?",
+      "authorimg" : "/img/frank.png",
+      "img" : "/img/dec/ucla.jpg",
+      "blob" : "This coming weekend there's probably a hackathon going on in your city. Some of them are getting really big. I wasn't registered for LA Hacks this summer. I don't even know how I ended up there on a Friday night, but when I saw what was going on, I grabbed a chair and started hacking away. Worried I had just snuck in the back door and started competing, my ride left and there I was, for the next two days. That's right. I snuck in the back of LA Hacks last summer at UCLA and hacked with kids 10 years younger than me. I couldn't miss it. I was floored when I saw how many people were in it. Me, being the mischevious hacker I am, I thought if I used the energy of the environment to my advantage, I could build something cool. Long story short, let me just say, that if you have been having a hard time launching, sign up for a hackathon. It's a guaranteed way to over-compensate for your constant failure to launch. More on what happened when I took the stage by surprise and got booted later..." 
+    }
+  ]
 
 
 

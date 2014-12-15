@@ -26,8 +26,11 @@ html
     script(src='/lib/angular-socket-io/socket.js')
     script(src='/js/application.js')
 
+
+
+  body(ng-app='Franchino' animation='slide-left-right-ios7', ng-controller='AppCtrl')
+    ng-include(src="'main.html'")
     
 
 
-  body(ng-app='Franchino', animation='slide-left-right-ios7', ng-controller='AppCtrl')
-    ng-include(src="'main.html'")
+

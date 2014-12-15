@@ -13,45 +13,26 @@ style.
 
   }
 
-section#main-content.first(style='background-color: #efefef;margin-top:-80px;padding-top:80px;')
+
+section#main-content.first(ng-controller='BlogCtrl', style='background-color: #efefef;margin-top:-80px;padding-top:80px;', ng-repeat='article in articles')
+  
   .row
     .large-12.columns.centered-text
       .row
         .large-1.columns.small-3
-          img(src='img/frank.png')
+          img(ng-src='{{article.authorimg}}')
         .large-11.columns
-          a(name='tim-sept-10')
-          h6 Posted by Franchino on October 2, 2014
+          h6 {{article.date}}
           br
-          h2 Thoughts after deploying my 5th Ionic hybrid mobile app
+          h2 {{article.heading}}
           br
-          p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+          img(ng-src='{{article.img}}')
+          br
+          br
+          br  
+          p(ng-bind-html-unsafe='{{article.blob}}') {{article.blob}}
+          a(ng-href='{{article.resource1}}') {{article.resource1}}
+          br
+          a(ng-href='{{article.resource2}}') {{article.resource2}}
           ul.inline-list
-      hr
-      .row
-        .large-1.columns.small-3
-          img(src='img/frank.png')
-        .large-11.columns
-          a(name='tim-sept-10')
-          h6 Posted by Franchino on October 2, 2014
-          br
-          h2 Everything I know about NFC, BLE and Proximity marketing.
-          br
-          p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          img(src='img/diagram@2x.png')
-          ul.inline-list
-      hr
-      .row
-        .large-1.columns.small-3
-          img(src='img/frank.png')
-        .large-11.columns
-          a(name='tim-sept-10')
-          h6 Posted by Franchino on October 2, 2014
-          br
-          h2 Everything I know about NFC, BLE and Proximity marketing.
-          br
-          p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          ul.inline-list
-      
-    aside.large-3.columns.hide-for-small
     
