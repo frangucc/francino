@@ -30,7 +30,7 @@ section#main-content.first(ng-controller='BlogCtrl', style='background-color: #e
           br
           br
           br  
-          p(ng-bind-html-unsafe='{{article.blob}}') {{article.blob}}
+          p(ng-bind-html='article.blob')
           a(ng-href='{{article.resource1}}') {{article.resource1}}
           br
           a(ng-href='{{article.resource2}}') {{article.resource2}}
