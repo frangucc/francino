@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><title>Franchino</title><meta charset="utf-8"><meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"><meta name="description" content="Deliver immersive in-location mobile experiences that increase foot traffic, deepen customer relationships, and inspire loyalty."><meta name="author" content="TAPCENTIVE, inc."><meta name="copyright" content="TAPCENTIVE, inc. Copyright (c) 2014"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="/css/foundation.css"><link rel="stylesheet" href="/css/app.min.css"><link rel="stylesheet" href="/css/icon-font.css"><link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"><link rel="stylesheet" href="/css/jquery.fullPage.css"><link rel="stylesheet" href="/css/examples.css"><script src="/lib/devicejs/lib/device.js"></script><script src="/socket.io/socket.io.js"> </script><script src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140216/jquery.cycle2.min.js"></script><script src="https://code.ionicframework.com/1.0.0-beta.13/js/ionic.bundle.min.js"></script><script src="cordova.js"></script><script src="/lib/underscore/underscore.js"></script><script src="/lib/angular-socket-io/socket.js"></script><script src="/js/application.js"></script><script src="/js/jquery.fullPage.js"></script><script type="text/javascript">$(document).ready(function() {
+  $('#fullpage').fullpage({
+    verticalCentered: true,
+    sectionsColor: ['#1bbc9b', '#fff', '#7BAABE', 'whitesmoke', '#ccddff'],
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    menu: '#menu',
+    scrollingSpeed: 1700,
+    afterRender: function(){
+
+
+      //playing the video
+      $('video').get(0).play();
+    }
+  });
+});
+
+</script></head><body ng-app="Franchino" animation="slide-left-right-ios7" ng-controller="AppCtrl"><div id="fullpage"><div id="section0" class="section"><video id="myVideo" autoplay="" loop="" muted=""><source src="/img/video.mp4" type="video/mp4"><source src="/img/flowers.webm" type="video/webm"></video><div class="layer"><img src="img/logo.png" alt="Cool"></div></div><div id="section1" class="section"><div class="slide"><img style="width:60%;" src="img/completeley_dope.png" alt="Cool"></div><div class="slide"><img style="width:60%;" src="img/boxes.jpg" alt="Compatible"></div></div><div id="section2" class="section"><div class="intro"><h1>Slooooooww</h1><p>Now you can try other demos!</p></div><h1>No wraps, no extra markup</h1></div><div id="section3" class="section"><h1>Just the simplest demo ever</h1></div></div></body></html>
